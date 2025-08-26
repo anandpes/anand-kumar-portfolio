@@ -6,7 +6,7 @@ export const portfolioData = {
     tagline: "Transforming businesses through innovative cloud solutions and data-driven architectures",
     location: "Sydney, Singapore",
     phone: "+65-93436738",
-    email: "anjard.seng@gmail.com",
+    email: "anand.pes@gmail.com",
     visaStatus: ""
   },
 
