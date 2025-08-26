@@ -25,7 +25,7 @@ const Experience = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] rounded-full mx-auto"></div>
           <p className="text-[#94a3b8] text-lg mt-6 max-w-2xl mx-auto">
-            A journey of innovation, leadership, and technical excellence across enterprise environments
+            A journey of innovation, leadership, and technical excellence spanning 15+ years across enterprise environments
           </p>
         </div>
 
