@@ -1,13 +1,13 @@
 // Mock data for Anjard Seng's Portfolio
 export const portfolioData = {
   personal: {
-    name: "Anjard Seng",
+    name: "ANAND KUMAR",
     title: "Solutions Architect & Data Specialist",
     tagline: "Transforming businesses through innovative cloud solutions and data-driven architectures",
-    location: "Singapore",
+    location: "Sydney, Singapore",
     phone: "+65-93436738",
     email: "anjard.seng@gmail.com",
-    visaStatus: "Singapore Permanent Resident"
+    visaStatus: ""
   },
 
   about: {
