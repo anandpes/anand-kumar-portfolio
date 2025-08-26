@@ -1,0 +1,27 @@
+{
+  "name": "anand-kumar-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio for ANAND KUMAR - Solutions Architect & Data Specialist",
+  "main": "index.js",
+  "scripts": {
+    "install-frontend": "cd frontend && npm install",
+    "install-backend": "cd backend && pip install -r requirements.txt",
+    "start-frontend": "cd frontend && npm start",
+    "start-backend": "cd backend && python server.py",
+    "build": "cd frontend && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/anand-kumar-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "fastapi",
+    "mongodb",
+    "solutions-architect",
+    "data-specialist"
+  ],
+  "author": "ANAND KUMAR",
+  "license": "MIT"
+}
