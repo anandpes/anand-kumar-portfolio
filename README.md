@@ -35,7 +35,7 @@ A modern, responsive portfolio website showcasing expertise in Solutions Archite
 
 ## 📊 Professional Experience
 
-- **10+ years** in enterprise architecture and data solutions
+- **15+ years** in enterprise architecture and data solutions
 - **50+ projects** delivered successfully
 - **2M+ daily transactions** handled by payment systems architected
 - **15+ teams** led across various organizations
