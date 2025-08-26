@@ -39,25 +39,25 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#1a1c1b]">
+    <section id="contact" className="py-24 bg-[#0f1419]">
       <div className="max-w-[87.5rem] mx-auto px-8">
         {/* Section Header */}
         <div className="mb-16 text-center">
           <h2 
-            className="text-[#d9fb06] mb-6"
+            className="text-white mb-6"
             style={{
-              fontFamily: "'PP Right Grotesk', Arial, sans-serif",
+              fontFamily: "'Inter', Arial, sans-serif",
               fontWeight: 900,
               fontSize: "clamp(3rem, 4rem + 1vw, 5rem)",
-              lineHeight: 0.76,
+              lineHeight: 0.9,
               textTransform: "uppercase",
-              letterSpacing: "0px"
+              letterSpacing: "-0.02em"
             }}
           >
             Let's Connect
           </h2>
-          <div className="w-20 h-1 bg-[#d9fb06] rounded-full mx-auto"></div>
-          <p className="text-[#888680] text-lg mt-6 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] rounded-full mx-auto"></div>
+          <p className="text-[#94a3b8] text-lg mt-6 max-w-2xl mx-auto">
             Ready to discuss your next project or explore potential collaborations? I'd love to hear from you.
           </p>
         </div>
@@ -65,21 +65,21 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <div>
-            <h3 className="text-[#d9fb06] text-2xl font-bold mb-8">
+            <h3 className="text-white text-2xl font-bold mb-8">
               Get in Touch
             </h3>
             
             <div className="space-y-6 mb-12">
               {/* Email */}
-              <div className="flex items-center gap-4 p-6 bg-[#302f2c] rounded-lg border border-[#3f4816] hover:border-[#888680] transition-all duration-300">
-                <div className="w-12 h-12 bg-[#d9fb06] rounded-full flex items-center justify-center">
-                  <Mail size={20} className="text-[#1a1c1b]" />
+              <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-[#1a2332] to-[#1e293b] border border-[#334155] rounded-lg hover:border-[#3b82f6] transition-all duration-300 group">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Mail size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="text-[#d9fb06] font-medium">Email</div>
+                  <div className="text-white font-medium">Email</div>
                   <a 
                     href={`mailto:${contact.email}`}
-                    className="text-[#888680] hover:text-[#d9fb06] transition-colors"
+                    className="text-[#94a3b8] hover:text-[#3b82f6] transition-colors"
                   >
                     {contact.email}
                   </a>
@@ -87,15 +87,15 @@ const Contact = () => {
               </div>
 
               {/* Phone */}
-              <div className="flex items-center gap-4 p-6 bg-[#302f2c] rounded-lg border border-[#3f4816] hover:border-[#888680] transition-all duration-300">
-                <div className="w-12 h-12 bg-[#d9fb06] rounded-full flex items-center justify-center">
-                  <Phone size={20} className="text-[#1a1c1b]" />
+              <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-[#1a2332] to-[#1e293b] border border-[#334155] rounded-lg hover:border-[#3b82f6] transition-all duration-300 group">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Phone size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="text-[#d9fb06] font-medium">Phone</div>
+                  <div className="text-white font-medium">Phone</div>
                   <a 
                     href={`tel:${contact.phone}`}
-                    className="text-[#888680] hover:text-[#d9fb06] transition-colors"
+                    className="text-[#94a3b8] hover:text-[#3b82f6] transition-colors"
                   >
                     {contact.phone}
                   </a>
@@ -103,25 +103,25 @@ const Contact = () => {
               </div>
 
               {/* Location */}
-              <div className="flex items-center gap-4 p-6 bg-[#302f2c] rounded-lg border border-[#3f4816] hover:border-[#888680] transition-all duration-300">
-                <div className="w-12 h-12 bg-[#d9fb06] rounded-full flex items-center justify-center">
-                  <MapPin size={20} className="text-[#1a1c1b]" />
+              <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-[#1a2332] to-[#1e293b] border border-[#334155] rounded-lg hover:border-[#3b82f6] transition-all duration-300 group">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <MapPin size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="text-[#d9fb06] font-medium">Location</div>
-                  <div className="text-[#888680]">{contact.location}</div>
+                  <div className="text-white font-medium">Location</div>
+                  <div className="text-[#94a3b8]">{contact.location}</div>
                 </div>
               </div>
             </div>
 
             {/* Availability Status */}
-            <div className="bg-[#3f4816] p-6 rounded-lg border border-[#888680]">
+            <div className="bg-gradient-to-r from-[#1e293b] to-[#334155] border border-[#475569] p-6 rounded-lg">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-3 h-3 bg-[#d9fb06] rounded-full animate-pulse"></div>
-                <span className="text-[#d9fb06] font-bold">Current Status</span>
+                <div className="w-3 h-3 bg-[#10b981] rounded-full animate-pulse"></div>
+                <span className="text-white font-bold">Current Status</span>
               </div>
-              <p className="text-[#d9fb06] font-medium">{contact.availability}</p>
-              <p className="text-[#888680] text-sm mt-2">
+              <p className="text-[#10b981] font-medium">{contact.availability}</p>
+              <p className="text-[#94a3b8] text-sm mt-2">
                 Preferred contact method: {contact.preferredContact}
               </p>
             </div>
@@ -129,17 +129,17 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div>
-            <h3 className="text-[#d9fb06] text-2xl font-bold mb-8">
+            <h3 className="text-white text-2xl font-bold mb-8">
               Send a Message
             </h3>
 
             {isSubmitted ? (
-              <div className="bg-[#3f4816] p-8 rounded-lg border border-[#888680] text-center">
-                <CheckCircle size={48} className="text-[#d9fb06] mx-auto mb-4" />
-                <h4 className="text-[#d9fb06] text-xl font-bold mb-2">
+              <div className="bg-gradient-to-r from-[#1e293b] to-[#334155] border border-[#10b981] p-8 rounded-lg text-center">
+                <CheckCircle size={48} className="text-[#10b981] mx-auto mb-4" />
+                <h4 className="text-white text-xl font-bold mb-2">
                   Message Sent!
                 </h4>
-                <p className="text-[#888680]">
+                <p className="text-[#94a3b8]">
                   Thank you for reaching out. I'll get back to you within 24 hours.
                 </p>
               </div>
@@ -147,7 +147,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name */}
                 <div>
-                  <label htmlFor="name" className="block text-[#d9fb06] font-medium mb-2">
+                  <label htmlFor="name" className="block text-white font-medium mb-2">
                     Full Name *
                   </label>
                   <input
@@ -157,14 +157,14 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full bg-[#302f2c] border border-[#3f4816] rounded-lg px-4 py-3 text-[#d9fb06] placeholder-[#888680] focus:border-[#d9fb06] focus:outline-none transition-colors"
+                    className="w-full bg-[#1a2332] border border-[#334155] rounded-lg px-4 py-3 text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none focus:ring-2 focus:ring-[#3b82f6]/20 transition-colors"
                     placeholder="Your full name"
                   />
                 </div>
 
                 {/* Email */}
                 <div>
-                  <label htmlFor="email" className="block text-[#d9fb06] font-medium mb-2">
+                  <label htmlFor="email" className="block text-white font-medium mb-2">
                     Email Address *
                   </label>
                   <input
@@ -174,14 +174,14 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full bg-[#302f2c] border border-[#3f4816] rounded-lg px-4 py-3 text-[#d9fb06] placeholder-[#888680] focus:border-[#d9fb06] focus:outline-none transition-colors"
+                    className="w-full bg-[#1a2332] border border-[#334155] rounded-lg px-4 py-3 text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none focus:ring-2 focus:ring-[#3b82f6]/20 transition-colors"
                     placeholder="your.email@example.com"
                   />
                 </div>
 
                 {/* Subject */}
                 <div>
-                  <label htmlFor="subject" className="block text-[#d9fb06] font-medium mb-2">
+                  <label htmlFor="subject" className="block text-white font-medium mb-2">
                     Subject *
                   </label>
                   <input
@@ -191,14 +191,14 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full bg-[#302f2c] border border-[#3f4816] rounded-lg px-4 py-3 text-[#d9fb06] placeholder-[#888680] focus:border-[#d9fb06] focus:outline-none transition-colors"
+                    className="w-full bg-[#1a2332] border border-[#334155] rounded-lg px-4 py-3 text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none focus:ring-2 focus:ring-[#3b82f6]/20 transition-colors"
                     placeholder="What's this about?"
                   />
                 </div>
 
                 {/* Message */}
                 <div>
-                  <label htmlFor="message" className="block text-[#d9fb06] font-medium mb-2">
+                  <label htmlFor="message" className="block text-white font-medium mb-2">
                     Message *
                   </label>
                   <textarea
@@ -208,7 +208,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows="6"
-                    className="w-full bg-[#302f2c] border border-[#3f4816] rounded-lg px-4 py-3 text-[#d9fb06] placeholder-[#888680] focus:border-[#d9fb06] focus:outline-none transition-colors resize-vertical"
+                    className="w-full bg-[#1a2332] border border-[#334155] rounded-lg px-4 py-3 text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none focus:ring-2 focus:ring-[#3b82f6]/20 transition-colors resize-vertical"
                     placeholder="Tell me about your project or how I can help..."
                   />
                 </div>
@@ -216,9 +216,9 @@ const Contact = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="btn-primary bg-[#d9fb06] text-[#1a1c1b] border-none rounded-[10rem] px-8 py-4 font-semibold text-base cursor-pointer transition-all duration-300 hover:scale-105 hover:opacity-90 uppercase tracking-tight w-full flex items-center justify-center gap-3"
+                  className="group bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] hover:from-[#2563eb] hover:to-[#1e40af] text-white border-none rounded-full px-8 py-4 font-semibold text-base cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#3b82f6]/25 uppercase tracking-tight w-full flex items-center justify-center gap-3"
                 >
-                  <Send size={18} />
+                  <Send size={18} className="group-hover:translate-x-1 transition-transform" />
                   Send Message
                 </button>
               </form>
