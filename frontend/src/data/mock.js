@@ -37,7 +37,7 @@ export const portfolioData = {
     {
       id: 1,
       title: "Senior Solutions Architect",
-      company: "Global Financial Services",
+      company: "",
       period: "2020 - Present",
       location: "Singapore",
       description: "Leading digital transformation initiatives and payment system modernization projects.",
@@ -51,7 +51,7 @@ export const portfolioData = {
     {
       id: 2,
       title: "Data Specialist & Integration Lead",
-      company: "Enterprise Technology Solutions",
+      company: "",
       period: "2018 - 2020",
       location: "Singapore",
       description: "Specialized in middleware integration and data platform development.",
@@ -65,7 +65,7 @@ export const portfolioData = {
     {
       id: 3,
       title: "Technical Consultant",
-      company: "TIBCO Software Solutions",
+      company: "",
       period: "2015 - 2018",
       location: "Singapore",
       description: "Provided technical consulting for enterprise integration solutions.",
