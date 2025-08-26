@@ -5,113 +5,262 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANAND KUMAR - Solutions Architect & Data Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { scroll-behavior: smooth; }
+        .gradient-text { 
+            background: linear-gradient(45deg, #3b82f6, #ffffff, #3b82f6); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 200%;
+            animation: gradient 2s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-white min-h-screen">
-    <div class="container mx-auto px-4 py-20">
-        <div class="text-center max-w-4xl mx-auto">
-            <p class="text-gray-400 text-lg mb-4 uppercase tracking-wide">Hello, I'm</p>
-            <h1 class="text-6xl md:text-8xl font-black mb-6 bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent">
+<body class="bg-gray-900 text-white">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-700">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-white font-bold text-xl">ANAND KUMAR</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-white transition-colors">Skills</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 pt-20">
+        <div class="text-center max-w-6xl mx-auto px-6">
+            <p class="text-gray-400 text-lg mb-6 uppercase tracking-wide animate-pulse">Hello, I'm</p>
+            
+            <!-- Large Name Display -->
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-black mb-8 gradient-text">
                 ANAND KUMAR
             </h1>
-            <h2 class="text-2xl md:text-3xl text-gray-300 font-bold mb-6">
+            
+            <h2 class="text-2xl md:text-4xl text-gray-300 font-bold mb-6">
                 Solutions Architect & Data Specialist
             </h2>
-            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
                 15+ years transforming businesses through innovative cloud solutions and data-driven architectures
             </p>
             
             <!-- Stats Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-2xl mx-auto">
-                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-blue-500 transition-colors">
-                    <div class="text-blue-500 text-4xl font-black mb-2">15+</div>
-                    <div class="text-white text-sm font-semibold">Years Experience</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 max-w-4xl mx-auto">
+                <div class="bg-gray-800 border-2 border-blue-500 rounded-xl p-8 hover:bg-gray-700 transition-all transform hover:scale-105">
+                    <div class="text-blue-400 text-5xl font-black mb-4">15+</div>
+                    <div class="text-white text-lg font-semibold">Years Experience</div>
+                    <div class="text-gray-400 text-sm mt-2">Enterprise Architecture</div>
                 </div>
-                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-blue-500 transition-colors">
-                    <div class="text-blue-500 text-4xl font-black mb-2">50+</div>
-                    <div class="text-white text-sm font-semibold">Projects Delivered</div>
+                <div class="bg-gray-800 border-2 border-green-500 rounded-xl p-8 hover:bg-gray-700 transition-all transform hover:scale-105">
+                    <div class="text-green-400 text-5xl font-black mb-4">50+</div>
+                    <div class="text-white text-lg font-semibold">Projects Delivered</div>
+                    <div class="text-gray-400 text-sm mt-2">Digital Transformation</div>
                 </div>
-                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-blue-500 transition-colors">
-                    <div class="text-blue-500 text-4xl font-black mb-2">2M+</div>
-                    <div class="text-white text-sm font-semibold">Daily Transactions</div>
+                <div class="bg-gray-800 border-2 border-purple-500 rounded-xl p-8 hover:bg-gray-700 transition-all transform hover:scale-105">
+                    <div class="text-purple-400 text-5xl font-black mb-4">2M+</div>
+                    <div class="text-white text-lg font-semibold">Daily Transactions</div>
+                    <div class="text-gray-400 text-sm mt-2">Payment Systems</div>
                 </div>
             </div>
 
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-20">
+                <a href="#contact" class="bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all shadow-lg">
+                    Get In Touch
+                </a>
+                <a href="#skills" class="border-2 border-blue-600 text-blue-600 px-10 py-4 rounded-full text-lg font-semibold hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all">
+                    View Skills
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-12 text-center">About Me</h2>
+            <div class="bg-gray-900 border border-gray-700 rounded-xl p-10">
+                <p class="text-gray-300 text-xl leading-relaxed text-center max-w-4xl mx-auto">
+                    Passionate Solutions Architect with <span class="text-blue-400 font-bold">15+ years</span> of experience in driving digital transformation through cutting-edge technology solutions. I specialize in adopting AI & emerging technologies, architecting scalable cloud platforms, and modernizing legacy payment systems.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-12">
+                    <div>
+                        <h3 class="text-white text-xl font-bold mb-6">Core Expertise</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <span class="text-green-400 text-xl">✓</span>
+                                <span class="text-gray-300">AI & Emerging Tech Adoption</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-green-400 text-xl">✓</span>
+                                <span class="text-gray-300">Digital Transformation Leadership</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-green-400 text-xl">✓</span>
+                                <span class="text-gray-300">Integration & Middleware Expertise</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-green-400 text-xl">✓</span>
+                                <span class="text-gray-300">Payment System Modernisation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-white text-xl font-bold mb-6">Achievements</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-800 border border-gray-700 p-4 rounded-lg">
+                                <div class="text-blue-400 text-2xl font-bold">40%</div>
+                                <div class="text-gray-300 text-sm">Infrastructure Cost Reduction</div>
+                            </div>
+                            <div class="bg-gray-800 border border-gray-700 p-4 rounded-lg">
+                                <div class="text-green-400 text-2xl font-bold">60%</div>
+                                <div class="text-gray-300 text-sm">Decision-Making Improvement</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-12 text-center">Core Technical Skills</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-blue-500 transition-colors">
+                    <h3 class="text-white font-bold mb-4">Cloud Platforms</h3>
+                    <div class="space-y-2">
+                        <span class="block bg-blue-600 text-white px-3 py-1 rounded text-sm">AWS</span>
+                        <span class="block bg-blue-600 text-white px-3 py-1 rounded text-sm">Microsoft Azure</span>
+                        <span class="block bg-blue-600 text-white px-3 py-1 rounded text-sm">OpenShift</span>
+                        <span class="block bg-blue-600 text-white px-3 py-1 rounded text-sm">Kubernetes</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-500 transition-colors">
+                    <h3 class="text-white font-bold mb-4">Integration</h3>
+                    <div class="space-y-2">
+                        <span class="block bg-green-600 text-white px-3 py-1 rounded text-sm">KAFKA</span>
+                        <span class="block bg-green-600 text-white px-3 py-1 rounded text-sm">IBM MQ</span>
+                        <span class="block bg-green-600 text-white px-3 py-1 rounded text-sm">JMS</span>
+                        <span class="block bg-green-600 text-white px-3 py-1 rounded text-sm">API Gateway</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-purple-500 transition-colors">
+                    <h3 class="text-white font-bold mb-4">DevOps</h3>
+                    <div class="space-y-2">
+                        <span class="block bg-purple-600 text-white px-3 py-1 rounded text-sm">Docker</span>
+                        <span class="block bg-purple-600 text-white px-3 py-1 rounded text-sm">Terraform</span>
+                        <span class="block bg-purple-600 text-white px-3 py-1 rounded text-sm">Jenkins</span>
+                        <span class="block bg-purple-600 text-white px-3 py-1 rounded text-sm">Helm</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-yellow-500 transition-colors">
+                    <h3 class="text-white font-bold mb-4">Programming</h3>
+                    <div class="space-y-2">
+                        <span class="block bg-yellow-600 text-white px-3 py-1 rounded text-sm">Java</span>
+                        <span class="block bg-yellow-600 text-white px-3 py-1 rounded text-sm">JavaScript</span>
+                        <span class="block bg-yellow-600 text-white px-3 py-1 rounded text-sm">React</span>
+                        <span class="block bg-yellow-600 text-white px-3 py-1 rounded text-sm">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-12 text-center">Let's Connect</h2>
+            
             <!-- Contact Information -->
-            <div class="bg-gray-800 border border-gray-700 rounded-lg p-8 mb-8">
-                <h3 class="text-white text-2xl font-bold mb-6">Contact Information</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-                    <div class="flex items-center gap-3">
-                        <span class="text-blue-500 text-xl">📧</span>
+            <div class="bg-gray-900 border border-gray-700 rounded-xl p-10 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl">
+                            📧
+                        </div>
                         <div>
                             <div class="text-gray-300 text-sm">Email</div>
-                            <a href="mailto:anand.pes@gmail.com" class="text-white font-semibold hover:text-blue-400">
+                            <a href="mailto:anand.pes@gmail.com" class="text-white text-lg font-semibold hover:text-blue-400 transition-colors">
                                 anand.pes@gmail.com
                             </a>
                         </div>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <span class="text-blue-500 text-xl">📞</span>
+                    
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white text-xl">
+                            📞
+                        </div>
                         <div>
                             <div class="text-gray-300 text-sm">Phone (Singapore)</div>
-                            <a href="tel:+6593436738" class="text-white font-semibold hover:text-blue-400">
+                            <a href="tel:+6593436738" class="text-white text-lg font-semibold hover:text-green-400 transition-colors">
                                 +65-93436738
                             </a>
                         </div>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <span class="text-blue-500 text-xl">📱</span>
+                    
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white text-xl">
+                            📱
+                        </div>
                         <div>
                             <div class="text-gray-300 text-sm">Phone (Sydney)</div>
-                            <a href="tel:0490010496" class="text-white font-semibold hover:text-blue-400">
+                            <a href="tel:0490010496" class="text-white text-lg font-semibold hover:text-purple-400 transition-colors">
                                 0490010496
                             </a>
                         </div>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <span class="text-blue-500 text-xl">📍</span>
+                    
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white text-xl">
+                            📍
+                        </div>
                         <div>
                             <div class="text-gray-300 text-sm">Location</div>
-                            <div class="text-white font-semibold">Sydney, Singapore</div>
+                            <div class="text-white text-lg font-semibold">Sydney, Singapore</div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="mt-6 p-4 bg-green-900 border border-green-700 rounded-lg">
-                    <div class="flex items-center justify-center gap-2">
-                        <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                        <span class="text-green-400 font-bold">Open to new opportunities</span>
+                <div class="mt-8 p-6 bg-green-900 border border-green-700 rounded-lg text-center">
+                    <div class="flex items-center justify-center gap-3 mb-2">
+                        <div class="w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
+                        <span class="text-green-400 text-xl font-bold">Open to new opportunities</span>
                     </div>
-                </div>
-            </div>
-
-            <!-- Skills -->
-            <div class="bg-gray-800 border border-gray-700 rounded-lg p-8">
-                <h3 class="text-white text-2xl font-bold mb-6">Core Technical Skills</h3>
-                <div class="flex flex-wrap justify-center gap-3">
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">AWS</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Microsoft Azure</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">OpenShift</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Kubernetes</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Docker</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Terraform</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">KAFKA</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">IBM MQ</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Java</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">JavaScript</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">React</span>
-                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Jenkins</span>
+                    <p class="text-green-300">Ready to discuss your next project or collaboration</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 border-t border-gray-700 py-8 mt-12">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-white text-xl font-bold mb-2">ANAND KUMAR</h3>
-            <p class="text-gray-400 mb-4">Solutions Architect & Data Specialist</p>
-            <p class="text-gray-500 text-sm">© 2024 ANAND KUMAR. All rights reserved.</p>
-            <p class="text-green-400 text-sm font-semibold mt-2">✅ Portfolio successfully deployed!</p>
+    <footer class="bg-gray-900 border-t border-gray-700 py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-white text-3xl font-black mb-4">ANAND KUMAR</h3>
+            <p class="text-gray-400 text-xl mb-6">Solutions Architect & Data Specialist</p>
+            <div class="flex justify-center space-x-8 mb-6">
+                <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+            </div>
+            <div class="text-gray-400 text-sm">
+                <p>© 2024 ANAND KUMAR. All rights reserved.</p>
+                <p class="mt-2 text-green-400 font-semibold">✅ Portfolio successfully deployed!</p>
+            </div>
         </div>
     </footer>
 </body>
