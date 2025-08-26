@@ -1,28 +1,35 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* Custom CSS Variables - Gilshar Design System */
+/* Custom CSS Variables - Professional Color Scheme */
 :root {
   /* Backgrounds */
-  --bg-page: #1a1c1b;
-  --bg-card: #302f2c;
-  --bg-light: #dfddd6;
+  --bg-page: #0f1419;                       /* Deep navy background */
+  --bg-card: #1a2332;                       /* Darker blue-gray card backgrounds */
+  --bg-light: #f8fafc;                      /* Light backgrounds when needed */
+  --bg-accent: #1e293b;                     /* Accent background */
   
   /* Text */
-  --text-primary: #d9fb06;
-  --text-secondary: #888680;
-  --text-muted: #302f2c;
-  --text-inverse: #1a1c1b;
+  --text-primary: #ffffff;                  /* Pure white primary text */
+  --text-secondary: #94a3b8;                /* Light gray supporting text */
+  --text-muted: #64748b;                    /* Muted gray text */
+  --text-inverse: #0f1419;                  /* Dark text on light backgrounds */
   
   /* Borders */
-  --border-light: rgba(63, 72, 22, 0.5);
-  --border-medium: #3f4816;
-  --border-strong: #888680;
+  --border-light: rgba(148, 163, 184, 0.2); /* Subtle borders */
+  --border-medium: #334155;                 /* Standard borders */
+  --border-strong: #475569;                 /* Strong borders */
   
-  /* Brand Colors */
-  --brand-primary: #d9fb06;
-  --brand-hover: rgba(217, 251, 6, 0.8);
-  --brand-active: rgba(217, 251, 6, 0.6);
+  /* Professional Brand Colors */
+  --brand-primary: #3b82f6;                 /* Professional blue */
+  --brand-hover: #2563eb;                   /* Darker blue on hover */
+  --brand-active: #1d4ed8;                  /* Even darker blue for active */
+  --brand-light: #dbeafe;                   /* Light blue for backgrounds */
+  
+  /* Accent Colors */
+  --accent-success: #10b981;                /* Green for success states */
+  --accent-warning: #f59e0b;                /* Orange for warnings */
+  --accent-error: #ef4444;                  /* Red for errors */
 }
 
 /* Base Styles */
