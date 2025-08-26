@@ -88,7 +88,7 @@ const Hero = () => {
           {/* Stats/highlights section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-slide-up delay-900">
             <div className="bg-[#1a2332] border border-[#334155] rounded-lg p-6 hover:border-[#3b82f6] transition-all duration-300 hover:transform hover:scale-105">
-              <div className="text-[#3b82f6] text-3xl font-black mb-2">10+</div>
+              <div className="text-[#3b82f6] text-3xl font-black mb-2">15+</div>
               <div className="text-white font-medium text-sm">Years Experience</div>
             </div>
             <div className="bg-[#1a2332] border border-[#334155] rounded-lg p-6 hover:border-[#3b82f6] transition-all duration-300 hover:transform hover:scale-105">
