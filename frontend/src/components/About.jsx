@@ -56,7 +56,7 @@ const About = () => {
           {/* Stats/Achievement Cards */}
           <div className="space-y-6">
             <div className="bg-gradient-to-br from-[#1a2332] to-[#1e293b] border border-[#334155] p-6 rounded-lg hover:border-[#3b82f6] transition-all duration-300 hover:transform hover:scale-105">
-              <div className="text-[#3b82f6] text-3xl font-black mb-2">10+</div>
+              <div className="text-[#3b82f6] text-3xl font-black mb-2">15+</div>
               <div className="text-white font-medium">Years of Experience</div>
               <div className="text-[#64748b] text-sm mt-1">In enterprise architecture and data solutions</div>
             </div>
