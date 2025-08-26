@@ -24,7 +24,7 @@ const Skills = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] rounded-full mx-auto"></div>
           <p className="text-[#94a3b8] text-lg mt-6 max-w-2xl mx-auto">
-            A comprehensive toolkit built through years of hands-on experience in enterprise architecture and digital transformation
+            A comprehensive toolkit built through 15+ years of hands-on experience in enterprise architecture and digital transformation
           </p>
         </div>
 
