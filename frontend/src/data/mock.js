@@ -156,7 +156,10 @@ export const portfolioData = {
 
   contact: {
     email: "anand.pes@gmail.com",
-    phone: "+65-93436738",
+    phone: {
+      singapore: "+65-93436738",
+      sydney: "0490010496"
+    },
     location: "Sydney, Singapore",
     availability: "Open to new opportunities",
     preferredContact: "Email"
