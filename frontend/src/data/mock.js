@@ -25,21 +25,11 @@ export const portfolioData = {
   skills: {
     technical: [
       { category: "Programming", skills: ["Java", "JavaScript", "React Native", "Microservices"] },
-      { category: "Cloud Platforms", skills: ["AWS (S3, DataCatalog, EC2, EKS)", "Microsoft Azure", "CloudFormation", "RedShift"] },
+      { category: "Cloud Platforms", skills: ["AWS", "Microsoft Azure", "OpenShift", "Kubernetes"] },
       { category: "Data Technologies", skills: ["Hadoop", "Data Lakes", "PostgreSQL", "Oracle", "MS SQL", "Data Analysis"] },
-      { category: "Integration", skills: ["TIBCO Suite", "ESB", "SOA Frameworks", "REST API", "SOAP", "WSDL"] },
-      { category: "DevOps", skills: ["Jenkins", "Git", "Bitbucket", "CI/CD", "Spring Cloud Gateway", "WSO2"] },
+      { category: "Integration", skills: ["TIBCO Suite", "ESB", "SOA Frameworks", "REST API", "SOAP", "KAFKA", "IBM MQ", "JMS", "Batch", "SFTP", "API Gateway"] },
+      { category: "DevOps", skills: ["Jenkins", "Git", "Bitbucket", "CI/CD", "Docker", "Helm", "Terraform", "AWS CloudFormation"] },
       { category: "Tools", skills: ["Atlassian JIRA", "Confluence", "Microsoft Project", "Power BI", "Excel"] }
-    ],
-    management: [
-      "Strategy Planning",
-      "Incident Management", 
-      "Change Management",
-      "Problem Management",
-      "Delivery Management",
-      "SLA & Contingency Management",
-      "Stakeholder Collaboration",
-      "Requirements Analysis & Mapping"
     ]
   },
 
