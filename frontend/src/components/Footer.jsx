@@ -68,12 +68,20 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-[#3b82f6]" />
-                <a 
-                  href={`tel:${contact.phone}`}
-                  className="text-[#94a3b8] hover:text-[#3b82f6] transition-colors text-sm"
-                >
-                  {contact.phone}
-                </a>
+                <div className="flex flex-col">
+                  <a 
+                    href={`tel:${contact.phone.singapore}`}
+                    className="text-[#94a3b8] hover:text-[#3b82f6] transition-colors text-sm"
+                  >
+                    {contact.phone.singapore} (Singapore)
+                  </a>
+                  <a 
+                    href={`tel:${contact.phone.sydney}`}
+                    className="text-[#94a3b8] hover:text-[#3b82f6] transition-colors text-sm"
+                  >
+                    {contact.phone.sydney} (Sydney)
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin size={16} className="text-[#3b82f6]" />
