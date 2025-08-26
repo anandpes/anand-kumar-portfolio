@@ -56,9 +56,6 @@ const Experience = () => {
                     </h3>
                     
                     <div className="flex items-center gap-2 mb-4">
-                      <span className="text-[#94a3b8] font-medium">
-                        {exp.company}
-                      </span>
                       <MapPin size={14} className="text-[#94a3b8]" />
                       <span className="text-[#94a3b8] text-sm">
                         {exp.location}
