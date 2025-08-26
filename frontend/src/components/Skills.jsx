@@ -58,28 +58,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Management Skills */}
-        <div>
-          <h3 className="text-white text-2xl font-bold mb-8 text-center">
-            Leadership & Management
-          </h3>
-          <div className="bg-[#0f1419] border border-[#334155] p-8 rounded-lg">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {skills.management.map((skill, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center gap-3 p-4 bg-[#1a2332] border border-[#334155] rounded-lg hover:border-[#3b82f6] transition-all duration-300 hover:transform hover:translateY(-2px) group"
-                >
-                  <div className="w-2 h-2 bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] rounded-full flex-shrink-0 group-hover:animate-pulse"></div>
-                  <span className="text-[#94a3b8] font-medium text-sm group-hover:text-white transition-colors">
-                    {skill}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-[#0f1419] via-[#1e293b] to-[#0f1419] border border-[#334155] p-8 rounded-lg max-w-3xl mx-auto">
