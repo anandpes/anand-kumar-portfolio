@@ -126,18 +126,34 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Phone */}
+              {/* Phone - Singapore */}
               <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-[#1a2332] to-[#1e293b] border border-[#334155] rounded-lg hover:border-[#3b82f6] transition-all duration-300 group">
                 <div className="w-12 h-12 bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Phone size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="text-white font-medium">Phone</div>
+                  <div className="text-white font-medium">Phone (Singapore)</div>
                   <a 
-                    href={`tel:${contact.phone}`}
+                    href={`tel:${contact.phone.singapore}`}
                     className="text-[#94a3b8] hover:text-[#3b82f6] transition-colors"
                   >
-                    {contact.phone}
+                    {contact.phone.singapore}
+                  </a>
+                </div>
+              </div>
+
+              {/* Phone - Sydney */}
+              <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-[#1a2332] to-[#1e293b] border border-[#334155] rounded-lg hover:border-[#3b82f6] transition-all duration-300 group">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Phone size={20} className="text-white" />
+                </div>
+                <div>
+                  <div className="text-white font-medium">Phone (Sydney)</div>
+                  <a 
+                    href={`tel:${contact.phone.sydney}`}
+                    className="text-[#94a3b8] hover:text-[#3b82f6] transition-colors"
+                  >
+                    {contact.phone.sydney}
                   </a>
                 </div>
               </div>
