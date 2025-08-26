@@ -11,7 +11,7 @@ export const portfolioData = {
   },
 
   about: {
-    summary: "Passionate Solutions Architect with 10+ years of experience in driving digital transformation through cutting-edge technology solutions. I specialize in adopting AI & emerging technologies, architecting scalable cloud platforms, and modernizing legacy payment systems.",
+    summary: "Passionate Solutions Architect with 15+ years of experience in driving digital transformation through cutting-edge technology solutions. I specialize in adopting AI & emerging technologies, architecting scalable cloud platforms, and modernizing legacy payment systems.",
     highlights: [
       "AI & Emerging Tech Adoption",
       "Digital Transformation Leadership",
