@@ -5,7 +5,10 @@ export const portfolioData = {
     title: "Solutions Architect & Data Specialist",
     tagline: "Transforming businesses through innovative cloud solutions and data-driven architectures",
     location: "Sydney, Singapore",
-    phone: "+65-93436738",
+    phone: {
+      singapore: "+65-93436738",
+      sydney: "0490010496"
+    },
     email: "anand.pes@gmail.com",
     visaStatus: ""
   },
