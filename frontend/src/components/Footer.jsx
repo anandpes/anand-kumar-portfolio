@@ -11,25 +11,25 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#302f2c] border-t border-[#3f4816]">
+    <footer className="bg-[#1a2332] border-t border-[#334155]">
       <div className="max-w-[87.5rem] mx-auto px-8 py-16">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand & Description */}
           <div>
-            <h3 className="text-[#d9fb06] text-2xl font-black mb-4">
+            <h3 className="text-white text-2xl font-black mb-4">
               {personal.name}
             </h3>
-            <p className="text-[#888680] mb-6 leading-relaxed">
+            <p className="text-[#94a3b8] mb-6 leading-relaxed">
               {personal.title} passionate about transforming businesses through innovative technology solutions.
             </p>
-            <div className="bg-[#3f4816] text-[#d9fb06] px-4 py-2 rounded-full text-sm font-medium w-fit">
+            <div className="bg-[#1e293b] border border-[#334155] text-[#3b82f6] px-4 py-2 rounded-full text-sm font-medium w-fit">
               {contact.availability}
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-[#d9fb06] font-bold mb-6 uppercase tracking-wide">
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wide">
               Quick Links
             </h4>
             <div className="space-y-3">
@@ -43,7 +43,7 @@ const Footer = () => {
                 <button
                   key={link.label}
                   onClick={() => document.getElementById(link.href.substring(1))?.scrollIntoView({ behavior: 'smooth' })}
-                  className="block text-[#888680] hover:text-[#d9fb06] transition-colors duration-300 text-left"
+                  className="block text-[#94a3b8] hover:text-[#3b82f6] transition-colors duration-300 text-left"
                 >
                   {link.label}
                 </button>
@@ -53,31 +53,31 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-[#d9fb06] font-bold mb-6 uppercase tracking-wide">
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wide">
               Contact Information
             </h4>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Mail size={16} className="text-[#d9fb06]" />
+                <Mail size={16} className="text-[#3b82f6]" />
                 <a 
                   href={`mailto:${contact.email}`}
-                  className="text-[#888680] hover:text-[#d9fb06] transition-colors text-sm"
+                  className="text-[#94a3b8] hover:text-[#3b82f6] transition-colors text-sm"
                 >
                   {contact.email}
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <Phone size={16} className="text-[#d9fb06]" />
+                <Phone size={16} className="text-[#3b82f6]" />
                 <a 
                   href={`tel:${contact.phone}`}
-                  className="text-[#888680] hover:text-[#d9fb06] transition-colors text-sm"
+                  className="text-[#94a3b8] hover:text-[#3b82f6] transition-colors text-sm"
                 >
                   {contact.phone}
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <MapPin size={16} className="text-[#d9fb06]" />
-                <span className="text-[#888680] text-sm">
+                <MapPin size={16} className="text-[#3b82f6]" />
+                <span className="text-[#94a3b8] text-sm">
                   {contact.location}
                 </span>
               </div>
@@ -86,9 +86,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-[#3f4816] mt-12 pt-8">
+        <div className="border-t border-[#334155] mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-[#888680] text-sm text-center md:text-left">
+            <div className="text-[#94a3b8] text-sm text-center md:text-left">
               <p>© {currentYear} {personal.name}. All rights reserved.</p>
               <p className="mt-1">
                 Built with React & FastAPI | Designed for Innovation
@@ -98,7 +98,7 @@ const Footer = () => {
             {/* Back to Top Button */}
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-2 text-[#d9fb06] hover:text-[rgba(217,251,6,0.8)] transition-all duration-300 group"
+              className="flex items-center gap-2 text-[#3b82f6] hover:text-[#2563eb] transition-all duration-300 group"
             >
               <span className="text-sm font-medium uppercase tracking-wide">Back to Top</span>
               <ArrowUp 
