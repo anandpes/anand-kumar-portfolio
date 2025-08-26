@@ -164,7 +164,7 @@ export const portfolioData = {
   contact: {
     email: "anjard.seng@gmail.com",
     phone: "+65-93436738",
-    location: "Singapore",
+    location: "Sydney, Singapore",
     availability: "Open to new opportunities",
     preferredContact: "Email"
   }
